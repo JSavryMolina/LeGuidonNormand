@@ -94,6 +94,8 @@ nav a:hover {
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Galerie Swiper */
 #galerie {
   max-width: 900px;
   margin: 2rem auto;
@@ -118,6 +120,9 @@ nav a:hover {
   align-items: center;
   background: #f9f9f9;
   padding: 0.5rem;
+  position: relative;
+  text-align: center;
+  background-color: #fff;
 }
 
 .swiper-slide img {
@@ -128,83 +133,14 @@ nav a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 1rem;
   filter: sepia(0.15) brightness(0.95);
-  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, transform 0.5s ease;
+  width: 100%;
+  height: auto;
+  filter: brightness(95%) contrast(105%) saturate(110%);
 }
 
 .swiper-slide img:hover {
   filter: none;
-}
-
-.caption h3 {
-  margin: 0;
-  color: #2a8c5f;
-  font-weight: 700;
-}
-
-.caption p {
-  font-style: italic;
-  color: #555;
-  margin-top: 0.3rem;
-}
-/* Galerie Swiper */
-.swiper {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-bottom: 2rem;
-}
-
-.swiper-slide {
-  position: relative;
-  text-align: center;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.caption {
-  margin-top: 1rem;
-}
-
-.caption h3 {
-  margin: 0.5rem 0 0.2rem;
-  color: #2a8c5f;
-}
-
-.caption p {
-  margin: 0;
-  font-style: italic;
-  color: #555;
-}
-/* 🌄 Galerie swiper */
-.swiper {
-  width: 100%;
-  max-width: 1000px;
-  margin: 2rem auto;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.swiper-slide {
-  position: relative;
-  text-align: center;
-  background-color: #fff;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  filter: brightness(95%) contrast(105%) saturate(110%);
-  transition: transform 0.5s ease;
-}
-
-.swiper-slide:hover img {
   transform: scale(1.03);
 }
 
@@ -219,17 +155,21 @@ nav a:hover {
   border-radius: 8px;
   max-width: 80%;
   text-align: left;
+  margin-top: 1rem;
 }
 
 .caption h3 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: bold;
+  color: #2a8c5f;
 }
 
 .caption p {
   margin: 0.3rem 0 0;
   font-size: 0.95rem;
+  font-style: italic;
+  color: #555;
 }
 
 /* ◀️▶️ Flèches swiper */
