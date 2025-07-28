@@ -12,9 +12,11 @@
     <p>Je réponds à toutes vos demandes dans les meilleurs délais 🚴</p>
   </header>
 
-  <section id="formulaire">
+  <section>
     <img src="images/velo-contact.jpg" alt="Julien guidant un groupe à vélo" class="form-photo" />
-    <form action="https://formspree.io/f/xldlnrrj" method="POST">
+    
+    <!-- ✅ L’ancre est maintenant sur le formulaire -->
+    <form id="formulaire" action="https://formspree.io/f/xldlnrrj" method="POST">
       <label for="name">Nom :</label><br />
       <input type="text" id="name" name="name" required /><br /><br />
 
