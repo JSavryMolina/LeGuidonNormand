@@ -1,32 +1,88 @@
-<section id="galerie">
-  <h2>Mes périples à vélo</h2>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mes périples à vélo</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <header>
+    <h1>Mes périples sur l’Avenue Verte</h1>
+    <p>Instants capturés lors de mes aventures à vélo 🚴‍♂️</p>
+  </header>
 
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="images/sunrise-route.jpg" alt="Lever de soleil sur la route" />
-        <div class="caption">
-          <h3>Lever de soleil</h3>
-          <p>Entre Dieppe et Forges – un moment magique</p>
+  <main>
+    <section id="galerie">
+      <h2>Moments forts à vélo</h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="images/Gisros_Gasny.jpeg" alt="Vélo route entre Gisors et Vernon" loading="lazy" />
+            <div class="caption">
+              <h3>Soleil sur la vallée de l'Epte</h3>
+              <p>Entre Gisors et Gasny – un moment magique baigné de lumière</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/Plage_Dieppe.jpeg" alt="Pause à Dieppe" loading="lazy" />
+            <div class="caption">
+              <h3>Pause plage</h3>
+              <p>Un instant convivial à l’ombre, face à la mer</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/Vexin.jpg" alt="Le Vexin Val d'Oise" loading="lazy" />
+            <div class="caption">
+              <h3>Route du Vexin</h3>
+              <p>Silence, fraîcheur et chants d’oiseaux en pleine nature normande</p>
+            </div>
+          </div>
+
+          <!-- ➕ Ajoute d'autres périples ici sans limite -->
+
         </div>
+
+        <!-- Flèches navigation -->
+        <div class="swiper-button-next" aria-label="Suivant"></div>
+        <div class="swiper-button-prev" aria-label="Précédent"></div>
+
+        <!-- Pagination cercles -->
+        <div class="swiper-pagination"></div>
       </div>
+    </section>
+  </main>
 
-      <div class="swiper-slide">
-        <img src="images/forest-path.jpg" alt="Chemin forestier" />
-        <div class="caption">
-          <h3>Chemin forestier</h3>
-          <p>Traversée paisible d’une forêt normande</p>
-        </div>
-      </div>
+  <footer>
+    <p><a href="index.html">← Retour à l’accueil</a></p>
+    <p>© 2025 LeGuidonNormand</p>
+  </footer>
 
-      <!-- Ajoute d'autres slides ici -->
-    </div>
-
-    <!-- Flèches navigation -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-    <!-- Pagination (cercles en bas) -->
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      autoplay: {
+        delay: 10000, // ⏱️ 10 secondes entre chaque slide
+        disableOnInteraction: false
+      },
+      speed: 800 // 🎯 transition douce (en ms)
+    });
+  </script>
+</body>
+</html>

@@ -146,3 +146,106 @@ nav a:hover {
   color: #555;
   margin-top: 0.3rem;
 }
+/* Galerie Swiper */
+.swiper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.caption {
+  margin-top: 1rem;
+}
+
+.caption h3 {
+  margin: 0.5rem 0 0.2rem;
+  color: #2a8c5f;
+}
+
+.caption p {
+  margin: 0;
+  font-style: italic;
+  color: #555;
+}
+/* 🌄 Galerie swiper */
+.swiper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(95%) contrast(105%) saturate(110%);
+  transition: transform 0.5s ease;
+}
+
+.swiper-slide:hover img {
+  transform: scale(1.03);
+}
+
+/* 📸 Légende sur les photos */
+.caption {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  max-width: 80%;
+  text-align: left;
+}
+
+.caption h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.caption p {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+}
+
+/* ◀️▶️ Flèches swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+
+/* 🟣 Pagination cercles */
+.swiper-pagination-bullet {
+  background: #2a8c5f;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #1e6e49;
+  opacity: 1;
+}
