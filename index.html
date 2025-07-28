@@ -7,12 +7,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-  <ul>
-    <li><a href="#services">Périples</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li><a href="periples.html">Périples</a></li>
+      <!-- 🔁 Correction ici : lien vers contact.html#formulaire -->
+      <li><a href="contact.html#formulaire">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Découvre l’Avenue Verte Paris-Londres à vélo</h1>
     <p>Guidage personnalisé, itinéraires adaptés, aventures à deux roues 🇫🇷🚴‍♂️🇬🇧</p>
@@ -38,14 +40,21 @@
     <p>📧 julien.savbry@gmail.com</p>
     <p>📞 07 86 85 02 73</p>
     <p>Tu peux aussi m’écrire via ce formulaire :</p>
-    <a href="contact.html">
+    <!-- 🔁 Tu peux garder ce bouton ou le supprimer si le lien du menu suffit -->
+    <a href="contact.html#formulaire">
       <button>Remplir le formulaire</button>
     </a>
   </section>
 
   <footer>
     <p>© 2025 LeGuidonNormand — Guide vélo sur l’Avenue Verte</p>
+    <p>📸 Retrouve-moi aussi sur Instagram : 
+      <a href="https://www.instagram.com/ton_nom_d_utilisateur" target="_blank" rel="noopener noreferrer">
+        @ton_nom_d_utilisateur
+      </a>
+    </p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -12,9 +12,11 @@
     <p>Je réponds à toutes vos demandes dans les meilleurs délais 🚴</p>
   </header>
 
-  <section id="formulaire">
+  <section>
     <img src="images/velo-contact.jpg" alt="Julien guidant un groupe à vélo" class="form-photo" />
-    <form action="https://formspree.io/f/xldlnrrj" method="POST">
+    
+    <!-- ✅ L’ancre est maintenant sur le formulaire -->
+    <form id="formulaire" action="https://formspree.io/f/xldlnrrj" method="POST">
       <label for="name">Nom :</label><br />
       <input type="text" id="name" name="name" required /><br /><br />
 
@@ -27,13 +29,6 @@
       <button type="submit">Envoyer</button>
     </form>
   </section>
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Pour toute question ou réservation, cliquez ci-dessous :</p>
-  <a href="contact.html">
-    <button>Remplir le formulaire</button>
-  </a>
-</section>
 
   <footer>
     <p><a href="index.html">← Retour à l’accueil</a></p>
