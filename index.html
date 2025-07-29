@@ -3,32 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guidage vélo Avenue Verte</title>
+  <title>Le Guidon Normand - Guidage vélo Avenue Verte</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="periples.html">Périples</a></li>
-      <!-- 🔁 Correction ici : lien vers contact.html#formulaire -->
-      <li><a href="contact.html#formulaire">Contact</a></li>
-    </ul>
-  </nav>
 
+  <!-- ✅ En-tête sticky avec logo à gauche et menu à droite -->
   <header class="bandeau-header">
-  <img src="images/Le_Guidon_Normand_logo.jpg" alt="Logo Le Guidon Normand" class="logo-site" />
-  <div class="texte-header">
-    <h1>Découvre l’Avenue Verte Paris-Londres à vélo</h1>
-    <p>Guidage personnalisé, itinéraires adaptés, aventures à deux roues 🇫🇷🚴‍♂️🇬🇧</p>
+  <div class="container-header">
+    <div class="bloc-logo-menu">
+      <img src="images/Le_Guidon_Normand_logo.jpg" alt="Logo Le Guidon Normand" class="logo-site" />
+      <nav class="menu-site">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="periples.html">Périples</a></li>
+          <li><a href="contact.html#formulaire">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
 
 
+  <!-- Texte d'accroche sous le header, centré -->
+  <section class="texte-accroche">
+    <h1>Découvre l’Avenue Verte Paris-Londres à vélo</h1>
+    <p>Guidage personnalisé, itinéraires adaptés, aventures à deux roues 🇫🇷🚴‍♂️🇬🇧</p>
+  </section>
+
+  <!-- ✅ Présentation -->
   <section id="presentation">
     <h2>Qui suis-je ?</h2>
     <p>Je suis Julien, passionné de cyclotourisme, et je propose des parcours accompagnés ou sur-mesure sur la célèbre Avenue Verte.</p>
   </section>
 
+  <!-- ✅ Services -->
   <section id="services">
     <h2>Mes services</h2>
     <ul>
@@ -39,20 +48,21 @@
     </ul>
   </section>
 
+  <!-- ✅ Contact -->
   <section id="contact">
     <h2>Contact</h2>
     <p>📧 julien.savbry@gmail.com</p>
     <p>📞 07 86 85 02 73</p>
     <p>Tu peux aussi m’écrire via ce formulaire :</p>
-    <!-- 🔁 Tu peux garder ce bouton ou le supprimer si le lien du menu suffit -->
     <a href="contact.html#formulaire">
       <button>Remplir le formulaire</button>
     </a>
   </section>
 
+  <!-- ✅ Pied de page -->
   <footer>
-    <p>© 2025 LeGuidonNormand — Guide vélo sur l’Avenue Verte</p>
-    <p>📸 Retrouve-moi aussi sur Instagram : 
+    <p>© 2025 Le Guidon Normand — Guide vélo sur l’Avenue Verte</p>
+    <p>📸 Retrouve-moi aussi sur Instagram :
       <a href="https://www.instagram.com/ton_nom_d_utilisateur" target="_blank" rel="noopener noreferrer">
         @ton_nom_d_utilisateur
       </a>

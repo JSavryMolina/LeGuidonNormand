@@ -7,32 +7,60 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Formulaire de contact</h1>
-    <p>Je réponds à toutes vos demandes dans les meilleurs délais 🚴</p>
+
+  <!-- ✅ BANNIÈRE avec logo et menu -->
+  <header class="bandeau-header">
+    <div class="container-header">
+      <div class="bloc-logo-menu">
+        <a href="index.html">
+          <img src="images/Le_Guidon_Normand_logo.jpg" alt="Logo Le Guidon Normand" class="logo-site" />
+        </a>
+        <nav class="menu-site">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="periples.html">Périples</a></li>
+            <li><a href="contact.html#formulaire">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <section>
-    <img src="images/velo-contact.jpg" alt="Julien guidant un groupe à vélo" class="form-photo" />
-    
-    <!-- ✅ L’ancre est maintenant sur le formulaire -->
-    <form id="formulaire" action="https://formspree.io/f/xldlnrrj" method="POST">
-      <label for="name">Nom :</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
+  <!-- ✅ CONTENU principal avec image et formulaire -->
+  <main class="section-contact">
+    <div class="contact-container">
 
-      <label for="email">Email :</label><br />
-      <input type="email" id="email" name="_replyto" required /><br /><br />
+      <!-- 📍 Colonne gauche : Image -->
+      <div class="carte-normandie">
+        <img src="images/Dieppe.jpg" alt="Carte de la Normandie à vélo" />
+      </div>
 
-      <label for="message">Message :</label><br />
-      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+      <!-- 📝 Colonne droite : Formulaire -->
+      <div class="formulaire-contact">
+        <h2>Formulaire de contact</h2>
+        <p>Je réponds à toutes vos demandes dans les meilleurs délais 🚴</p>
+        
+        <form id="formulaire" action="https://formspree.io/f/xldlnrrj" method="POST">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
 
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="_replyto" required />
+
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+
+    </div>
+  </main>
 
   <footer>
     <p><a href="index.html">← Retour à l’accueil</a></p>
-    <p>© 2025 LeGuidonNormand</p>
+    <p>© 2025 Le Guidon Normand</p>
   </footer>
+
 </body>
 </html>
