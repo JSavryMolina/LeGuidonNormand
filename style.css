@@ -303,3 +303,221 @@ footer a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+/* ===== RESET + BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== HEADER ===== */
+.bandeau-header {
+  position: sticky;
+  top: 0;
+  background-color: #2a8c5f;
+  padding: 1rem 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bloc-logo-menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logo-site {
+  height: 70px;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.menu-site ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-site a {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-site a:hover {
+  background-color: #1e6e49;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('images/hero.jpg') no-repeat center/cover;
+  color: #fff;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ===== GRID SECTIONS ===== */
+.main-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.section-grid {
+  background-color: #f7fdf9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-alt {
+  background-color: #eef7f1;
+}
+
+.section-content h2 {
+  color: #2a8c5f;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.section-content p,
+.section-content li {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  background-color: #2a8c5f;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1f6d4c;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 2rem;
+  color: #555;
+  font-size: 0.95rem;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: #2a8c5f;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* ===== Grille 3 colonnes : Qui suis-je / Services / Contact ===== */
+.trois-colonnes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #f7fdf9;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: 3rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.bloc-colonne {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.bloc-colonne h2 {
+  color: #2a8c5f;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.bloc-colonne ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.bloc-colonne p,
+.bloc-colonne li {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+.icone-colonne {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icone-colonne svg {
+  width: 48px;
+  height: 48px;
+  fill: #2a8c5f;
+  opacity: 0.85;
+  transition: transform 0.3s ease;
+}
+
+.bloc-colonne:hover .icone-colonne svg {
+  transform: scale(1.1);
+}
